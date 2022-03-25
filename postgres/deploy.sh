@@ -1,5 +1,5 @@
 echo "load env.."
-bash env.sh
+. env.sh
 bash ../remove.sh "$CONTAINER_NAME"
 sudo docker run -d \
     --name postgres-dev \
