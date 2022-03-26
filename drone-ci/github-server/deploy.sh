@@ -8,6 +8,8 @@ docker run \
   --env=DRONE_RPC_SECRET="$RPC_SECRET" \
   --env=DRONE_SERVER_HOST="$SERVER_HOST" \
   --env=DRONE_SERVER_PROTO="$SERVER_PROTO" \
+  --env=DRONE_DATABASE_DRIVER=postgres \
+  --env=DRONE_DATABASE_DATASOURCE="$DATABASE_DATASOURCE"\
   --restart=unless-stopped \
   --detach=true \
   --name "$CONTAINER_NAME" \

@@ -7,4 +7,4 @@ SERVER_HOST="drone.company.com"
 SERVER_PROTO="http"
 NETWORK="main"
 VERSION="1.20.2"
-
+DATABASE_DATASOURCE="postgres://root:password@1.2.3.4:5432/postgres?sslmode=disable"
