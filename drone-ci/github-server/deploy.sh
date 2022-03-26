@@ -12,5 +12,6 @@ docker run \
   --env=DRONE_DATABASE_DATASOURCE="$DATABASE_DATASOURCE"\
   --restart=unless-stopped \
   --detach=true \
+  --network="$NETWORK" \
   --name "$CONTAINER_NAME" \
   drone/drone:"$VERSION"
