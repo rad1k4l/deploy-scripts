@@ -1,0 +1,10 @@
+CONTAINER_NAME="drone-ci-github-server"
+DATA_PATH="/var/docker/$CONTAINER_NAME/data"
+GITHUB_CLIENT_ID="your-id"
+GITHUB_CLIENT_SECRET="super-duper-secret"
+RPC_SECRET="super-duper-secret"
+SERVER_HOST="drone.company.com"
+SERVER_PROTO="http"
+NETWORK="main"
+VERSION="1.20.2"
+
