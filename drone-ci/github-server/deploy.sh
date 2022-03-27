@@ -9,7 +9,8 @@ docker run \
   --env=DRONE_SERVER_HOST="$SERVER_HOST" \
   --env=DRONE_SERVER_PROTO="$SERVER_PROTO" \
   --env=DRONE_DATABASE_DRIVER=postgres \
-  --env=DRONE_DATABASE_DATASOURCE="$DATABASE_DATASOURCE"\
+  --env=DRONE_DATABASE_DATASOURCE="$DATABASE_DATASOURCE" \
+  --env=DRONE_LOGS_COLOR="$DRONE_LOGS_COLOR" \
   --restart=unless-stopped \
   --detach=true \
   --network="$NETWORK" \
