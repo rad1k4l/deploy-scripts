@@ -9,3 +9,4 @@ NETWORK="main"
 VERSION="2.11.1"
 DATABASE_DATASOURCE="postgres://root:password@1.2.3.4:5432/postgres?sslmode=disable"
 DRONE_LOGS_COLOR=true
+ADMIN_USER="username:rad1k4l,admin:true"
