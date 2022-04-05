@@ -3,9 +3,9 @@ echo "load env.."
 bash ../remove.sh "$CONTAINER_NAME"
 sudo docker run -d \
   --name "$CONTAINER_NAME" \
-  -e MYSQL_ROOT_PASSWORD="$POSTGRES_PASSWORD" \
+  -env MYSQL_ROOT_PASSWORD="$POSTGRES_PASSWORD" \
   --network="$NETWORK" \
-  -v "$DATA_PATH":/var/lib/mysql \
-  -v "$CONFIG_PATH":/etc/mysql \
+  -volume "$DATA_PATH":/var/lib/mysql \
+  -volume "$CONFIG_PATH":/etc/mysql \
   --restart unless-stopped \
   percona/percona-server:"$VERSION"
