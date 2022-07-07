@@ -1,0 +1,7 @@
+CONTAINER_NAME="mssql"
+MSSQL_SA_PASSWORD="x3h3Ays7dNdUGkYVKyDEMkHVEUeFyDr8"
+MSSQL_PID="Enterprise"
+ACCEPT_EULA="Y"
+DATA_PATH="/var/docker/mssql"
+NETWORK="main"
+VERSION="2019-latest"
