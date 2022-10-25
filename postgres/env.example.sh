@@ -3,5 +3,5 @@ POSTGRES_PASSWORD="x3h3Ays7dNdUGkYVKyDEMkHVEUeFyDr8"
 POSTGRES_USER="root"
 DATA_PATH="/var/docker/postgres"
 NETWORK="main"
-VERSION="14.2"
+VERSION="14.2-alpine3.15"
 
