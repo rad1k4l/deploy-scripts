@@ -3,6 +3,7 @@ echo "load env.."
 bash ../remove.sh "$CONTAINER_NAME"
 sudo docker run --detach \
     --name "$CONTAINER_NAME" \
+    --port 1433:1433 \
     --env=MSSQL_SA_PASSWORD="$MSSQL_SA_PASSWORD" \
     --env=MSSQL_PID="$MSSQL_PID" \
     --env=ACCEPT_EULA="$ACCEPT_EULA" \
