@@ -1,3 +1,5 @@
-CONTAINER_NAME="container-registry"
+CONTAINER_NAME="docker-registry"
+USERNAME="registry_user"
+PASSWORD="superpassword"
 NETWORK="main"
-VERSION="2.8.1"
+VERSION="2"
