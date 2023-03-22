@@ -1,0 +1,7 @@
+RUNNER_TOKEN="ASOQCNTOKENTOKENSOQCN"
+RUNNER_GROUP="Default"
+RUNNER_SCOPE="org"
+ORG_NAME="github-organization-name"
+RUNNER_NAME="$ORG_NAME-runner"
+CONTAINER_NAME="github-runner-$ORG_NAME"
+VERSION="2.301.1-ubuntu-focal"
