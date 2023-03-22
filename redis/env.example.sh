@@ -1,0 +1,5 @@
+CONTAINER_NAME="redis"
+REDIS_PASSWORD="superpassword"
+DATA_PATH="/var/docker/redis/data"
+NETWORK="main"
+VERSION="7.0-alpine3.16"
