@@ -9,6 +9,7 @@ docker run -d --restart always --name $CONTAINER_NAME \
   -e RUNNER_NAME="$RUNNER_NAME" \
   -e RUNNER_WORKDIR="/tmp/runner/$CONTAINER_NAME" \
   -e RUNNER_GROUP="$RUNNER_GROUP" \
+  -e LABELS="$LABELS" \
   -e DISABLE_AUTO_UPDATE="true" \
   -e RUNNER_SCOPE="$RUNNER_SCOPE" \
   -e ORG_NAME="$ORG_NAME" \
