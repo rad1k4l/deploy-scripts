@@ -1,5 +1,7 @@
 echo "load env.."
-. env.sh
+
+. $1.sh
+
 bash ../remove.sh "$CONTAINER_NAME"
 
 docker run -d --restart always --name $CONTAINER_NAME \
