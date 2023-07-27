@@ -1,5 +1,7 @@
 echo "load env.."
-. env.sh
+
+. $1.sh
+
 bash ../remove.sh "$CONTAINER_NAME"
 sudo docker run --detach \
   --name "$CONTAINER_NAME" \
