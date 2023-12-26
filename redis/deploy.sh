@@ -5,9 +5,9 @@ echo "load env.."
 bash ../remove.sh "$CONTAINER_NAME"
 sudo docker run --detach \
   --name "$CONTAINER_NAME" \
-  --env=POSTGRES_PASSWORD="$POSTGRES_PASSWORD" \
-  --env=POSTGRES_USER="$POSTGRES_USER" \
+  --env REDIS_PASSWORD="$REDIS_PASSWORD" \
   --network="$NETWORK" \
-  --volume "$DATA_PATH":/var/lib/postgresql/data \
+  --volume "$DATA_PATH":/data \
   --restart unless-stopped \
-  postgres:"$VERSION"
+  redis:"$VERSION" \
+redis-server --appendonly yes  --requirepass "$REDIS_PASSWORD"
